@@ -1,0 +1,37 @@
+{
+  "name": "nodejs-logging",
+  "version": "1.0.0",
+  "description": "Belajar NodeJS Logging",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "maxConcurrency": 2,
+    "verbose": true,
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "collectCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "Lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "author": "Mohammad Rizkon Nurkholis",
+  "license": "ISC",
+  "dependencies": {
+    "winston": "3.17.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.25.9",
+    "@babel/preset-env": "^7.26.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  }
+}
